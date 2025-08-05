@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Creative Web Solutions — SkillCraft</title>
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="site-header" id="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="#home">SkillCraft</a>
+
+      <nav class="nav" id="nav">
+        <button class="nav-toggle" id="nav-toggle" aria-expanded="false" aria-controls="nav-list">
+          ☰
+        </button>
+        <ul class="nav-list" id="nav-list">
+          <li><a href="#home" class="nav-link">Home</a></li>
+          <li><a href="#features" class="nav-link">Features</a></li>
+          <li><a href="#about" class="nav-link">About</a></li>
+          <li><a href="#contact" class="nav-link">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- HERO -->
+    <section id="home" class="hero">
+      <div class="container hero-grid">
+        <div class="hero-left">
+          <h1>Creative Web Solutions</h1>
+          <p class="lead">
+            We design and develop interactive, vibrant, and user-friendly web experiences that
+            adapt beautifully to any screen size. From concept to launch, we make sure your
+            online presence stands out.
+          </p>
+
+          <div class="hero-actions">
+            <a class="btn primary" href="#features">See Features</a>
+            <a class="btn ghost" href="#contact">Work With Us</a>
+          </div>
+        </div>
+
+        <div class="hero-right">
+          <div class="card-preview">
+            <h3>Modern & Engaging</h3>
+            <p>
+              Our approach blends creative visuals, clean layouts, and smooth interactions
+              to give your audience a delightful browsing experience.
+            </p>
+            <ul class="mini-list">
+              <li>Mobile-first design</li>
+              <li>Interactive animations</li>
+              <li>SEO-friendly structure</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FEATURES -->
+    <section id="features" class="section features">
+      <div class="container">
+        <h2 class="section-title">Features</h2>
+        <p class="section-sub">Designed to be clean, colourful and accessible across screen sizes.</p>
+
+        <div class="features-grid">
+          <article class="feature-card">
+            <div class="icon">✨</div>
+            <h3>Interactive Nav</h3>
+            <p>The navigation highlights the active section and animates on hover for clear feedback.</p>
+          </article>
+
+          <article class="feature-card">
+            <div class="icon">💡</div>
+            <h3>Responsive Layout</h3>
+            <p>Grid and flexible units keep content readable from mobile through large desktop screens.</p>
+          </article>
+
+          <article class="feature-card">
+            <div class="icon">⚡</div>
+            <h3>Fast & Lightweight</h3>
+            <p>No frameworks required — small CSS and a few lines of JavaScript for smooth behavior.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about" class="section about">
+      <div class="container about-grid">
+        <div class="about-text">
+          <h2>About this Design</h2>
+          <p>
+            This example demonstrates a modern landing layout: prominent hero, short feature cards, and an accessible nav.
+            Colors are bright yet balanced using gradients and soft shadows to create depth.
+          </p>
+          <p>
+            You can customize the colors, font weights, or swap the hero content to fit your project or assignment.
+          </p>
+        </div>
+
+        <aside class="about-aside">
+          <h4>Quick Specs</h4>
+          <ul>
+            <li>HTML5 semantics</li>
+            <li>CSS variables for easy theming</li>
+            <li>Vanilla JavaScript for scroll & mobile toggle</li>
+          </ul>
+        </aside>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="section contact">
+      <div class="container contact-grid">
+        <div>
+          <h2>Contact</h2>
+          <p>Want this adapted to your brand colors or to add a portfolio section? Send a quick message.</p>
+        </div>
+
+        <form class="contact-form" onsubmit="event.preventDefault(); alert('Thanks — message sent (demo)');">
+          <label>
+            <span class="sr-only">Name</span>
+            <input type="text" placeholder="Your name" required />
+          </label>
+          <label>
+            <span class="sr-only">Email</span>
+            <input type="email" placeholder="you@example.com" required />
+          </label>
+          <label>
+            <span class="sr-only">Message</span>
+            <textarea placeholder="Brief message" rows="3" required></textarea>
+          </label>
+          <button class="btn primary" type="submit">Send</button>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>© <span id="year"></span> SkillCraft Technology — Designed for demo purposes</p>
+      <p class="small">Built with HTML, CSS & JavaScript</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
